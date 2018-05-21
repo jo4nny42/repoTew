@@ -35,9 +35,9 @@ void game::startScreen(){
 
 void game::newLogin(){
 	std::cout<<"Choose your username.";
-	std::cin>>;
+	std::cin>>lUser;
 	std::cout<<"Choose your password;";
-	std::cin>>;
+	std::cin>>lPass;
 }
 
 void game::login(){
@@ -47,9 +47,9 @@ std::cout<<".";
 std::this_thread::sleep_for(std::chrono::seconds(2));
 std::cout<<".";
 std::cout<<"Enter your username.";
-std::cin>>;
+std::cin>>lUser;
 std::cout<<"Enter your password;";
-std::cin>>;
+std::cin>>lPass;
 
 }
 

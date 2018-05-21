@@ -30,6 +30,8 @@ public:
 	int attack;
 	std::string rulez;
 	std::string logQ;
+	std::string lUser;
+	std::string lPass;
 	std::string playerName;
 	std::string choice;
 	std::string bigChoiceOne;
