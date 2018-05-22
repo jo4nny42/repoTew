@@ -29,5 +29,6 @@ std::cin>>lPass;
 }
 
 int main(){
-  std::cout<<"Hi";
+  std::cout<<"Hi\n";
+  
 }
