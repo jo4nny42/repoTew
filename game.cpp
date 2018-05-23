@@ -7,6 +7,27 @@ game::game(){
 	monsterEncounter=rand()%1+10;
 }
 
+void game::newGame(){
+	std::cout<<"\n";
+}
+
+void game::continueGame(){
+	std::cout<<"\n";
+}
+
+void game::options(){
+	std::cout<<"\n";
+}
+
+void game::endGame(){
+	std::cout<<"\n";
+}
+
+void game::credits(){
+	std::cout<<"Game made by\n";
+	std::cout<<"MIIIIII!!!!!!!!\n";
+}
+
 void game::startScreen(){
 	std::cout<<"Choose your fate\n";
 	std::this_thread::sleep_for(std::chrono::seconds(2));
@@ -33,24 +54,23 @@ void game::startScreen(){
 						}
 }
 
-void game::newLogin(){
-	std::cout<<"Choose your username.";
-	std::cin>>lUser;
-	std::cout<<"Choose your password;";
-	std::cin>>lPass;
+void newLogin(){
+	std::cout<<"Choose your username and password that you desire.(ctrl + Z is finshed)\n";
+std::cin>>lUser>>lPass;
+  std::ifstream()
+	logFile<< lUser <<' '<< lPass <<"\n";
 }
 
-void game::login(){
-std::cout<<"Login initiated .";
-std::this_thread::sleep_for(std::chrono::seconds(2));
-std::cout<<".";
-std::this_thread::sleep_for(std::chrono::seconds(2));
-std::cout<<".";
-std::cout<<"Enter your username.";
-std::cin>>lUser;
-std::cout<<"Enter your password;";
-std::cin>>lPass;
-
+void login(){
+  std::ifstream logFile("players.txt");
+  logFile>>lUser>>lPass;
+  std::cout<<"Login initiated .";
+  std::this_thread::sleep_for(std::chrono::seconds(2));
+  std::cout<<".";
+  std::this_thread::sleep_for(std::chrono::seconds(2));
+  std::cout<<".\n";
+  /*std::cout<<"Enter your username and password.\n";*/
+   std::cout<<"Username: "<< lUser <<" Pasword: "<< lPass<<"\n";
 }
 
 void game::introduction(){
