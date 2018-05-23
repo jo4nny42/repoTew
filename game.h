@@ -21,20 +21,9 @@ public:
 	void enemyHealth();
 	void lostHealth();
 	void gameOver();
-	double eHealth;
-	double damage;
-	double remainingHealth;
-	double pHealth;
-	bool lost;
-	bool monsterEncounter;
+	double eHealth,damage,remainingHealth,pHealth;
+	bool lost,monsterEncounter;
 	int attack;
-	std::string rulez;
-	std::string logQ;
-	std::string lUser;
-	std::string lPass;
-	std::string playerName;
-	std::string choice;
-	std::string bigChoiceOne;
-	std::string choiceTwo;
+	std::string rulez, logQ,lUser,lPass,playerName,choice,bigChoiceOne,choiceTwo;
 };
 #endif
