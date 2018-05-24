@@ -7,14 +7,18 @@
 
 double total;
 double change;
-std::string adress="New York, NY 10036";
 std::string storeName="Port Authority";
+std::string address="New York, NY 10036";
 std:: string pNumber="(212) 971-6789";
 
 void money(){
 std::string credCard;
-std::cout<<"Insert your credit card number a minimum of 16 numbers.";
+std::cout<<"Insert your credit card number a minimum of 16 numbers.\n";
 std::cin>>credCard;
+  do{
+  std::cout<<"Invalid card number\n";
+  std::cin>>credCard;
+  } while (credCard.size()>16);
 }
 
 void date(){
@@ -24,7 +28,7 @@ void date(){
 void draw(){
 	std::cout<<std::setfill('/')<<std::setw(60)<<"\n";
 	std::cout<<"/     	             "        <<storeName <<"                       /\n";
-	std::cout<<"/                 "          <<adress<<"                      /\n";
+	std::cout<<"/                 "          <<address<<"                      /\n";
 	std::cout<<"/                    "<<pNumber<<"                       /\n"; 
   std::cout<<"/                                                         /\n";
 	std::cout<<"/                  Your total is "<<total<<"                        /\n";
@@ -56,6 +60,7 @@ void draw(){
 }
 
 int main(){
+  money();
   draw();
 	return 0;
 }
