@@ -1,24 +1,28 @@
 #include <iostream>
 #include <cassert>
-#include <iomanip>
+#include <ctime>
 #include <cmath>
 #include <string>
 #include <thread>
+#include <iomanip>
 
 double total;
 double change;
 std::string storeName="Port Authority";
 std::string address="New York, NY 10036";
-std:: string pNumber="(212) 971-6789";
+std::string pNumber="(212) 971-6789";
 
 void money(){
-std::string credCard;
-std::cout<<"Insert your credit card number a minimum of 16 numbers.\n";
-std::cin>>credCard;
+std::string cardNumbs;
+int credAmount=100;
+int toll=15;
+std::cout<<"Insert your e-ZPass number a minimum of 16 numbers with.\n";
+std::cin>>cardNumbs;
   do{
   std::cout<<"Invalid card number\n";
-  std::cin>>credCard;
-  } while (credCard.size()>16);
+  std::cin>>cardNumbs;
+  } while (cardNumbs.size()>16);
+  std::cout<<"Your credit card amount has:" << credAmount <<" dollars in it left";
 }
 
 void date(){
