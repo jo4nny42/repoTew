@@ -6,8 +6,7 @@
 #include <thread>
 #include <iomanip>
 
-double total;
-double change;
+int toll=15;
 std::string storeName="Port Authority";
 std::string address="New York, NY 10036";
 std::string pNumber="(212) 971-6789";
@@ -16,13 +15,14 @@ void money(){
 std::string cardNumbs;
 int credAmount=100;
 int toll=15;
+int change=credAmount-toll;
+credAmount=change;
 std::cout<<"Insert your e-ZPass number a minimum of 16 numbers with.\n";
 std::cin>>cardNumbs;
   do{
-  std::cout<<"Invalid card number\n";
+  std::cout<<"Invalid card number input\n";
   std::cin>>cardNumbs;
-  } while (cardNumbs.size()>16);
-  std::cout<<"Your credit card amount has:" << credAmount <<" dollars in it left";
+  } while (cardNumbs.size()>17); 
 }
 
 void date(){
@@ -35,9 +35,8 @@ void draw(){
 	std::cout<<"/                 "          <<address<<"                      /\n";
 	std::cout<<"/                    "<<pNumber<<"                       /\n"; 
   std::cout<<"/                                                         /\n";
-	std::cout<<"/                  Your total is "<<total<<"                        /\n";
-	std::cout<<"/                  You  gave:                             /\n";
-    std::cout<<"/                  Your change is: "<<change<<"                      /\n";
+	std::cout<<"/                  Your toll is "<<toll<<"                       /\n";
+    std::cout<<"/                  Your change is:"<<" "<<change<<"                      /\n";
 	std::cout<<"/                                                         /\n";
 	std::cout<<"/                                                         /\n";
 	std::cout<<"/                                          	          /\n";
