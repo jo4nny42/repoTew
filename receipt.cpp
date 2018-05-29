@@ -36,7 +36,6 @@ void draw(){
 	std::cout<<"/                    "<<pNumber<<"                       /\n"; 
   std::cout<<"/                                                         /\n";
 	std::cout<<"/                  Your toll is "<<toll<<"                       /\n";
-    std::cout<<"/                  Your change is:"<<" "<<change<<"                      /\n";
 	std::cout<<"/                                                         /\n";
 	std::cout<<"/                                                         /\n";
 	std::cout<<"/                                          	          /\n";
